@@ -7,7 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
-class ChangePasswordActivity : AppCompatActivity() {
+class ChangePassActivity : AppCompatActivity() {
     private lateinit var newPassword: TextView
     private lateinit var newPassButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {

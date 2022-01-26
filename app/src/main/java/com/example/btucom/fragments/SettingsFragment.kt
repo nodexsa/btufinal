@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.btucom.ChangePasswordActivity
+import com.example.btucom.ChangePassActivity
 import com.example.btucom.MainActivity
 import com.example.btucom.R
 import com.google.firebase.auth.FirebaseAuth
@@ -24,10 +24,10 @@ class SettingsFragment : Fragment(R.layout.fragment_settings){
             FirebaseAuth.getInstance().signOut()
             startActivity(Intent(this@SettingsFragment.requireContext(), MainActivity::class.java))
 
-            }
+        }
         button.setOnClickListener {
 
-            startActivity(Intent(this@SettingsFragment.requireContext(), ChangePasswordActivity::class.java))
+            startActivity(Intent(this@SettingsFragment.requireContext(), ChangePassActivity::class.java))
 
 
         }

@@ -30,12 +30,13 @@ class MainActivity : AppCompatActivity() {
     }
     private fun registerListener(){
         buttonloginmain.setOnClickListener {
-            startActivity(Intent(this,Fragments::class.java))
+
             val email = editTextTextEmailAddress.text.toString()
             val password = editTextTextPassword.text.toString()
             if (email.isEmpty() || password.isEmpty()){
-                Toast.makeText(this, "eror", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "shecdoma", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
+
             }
             FirebaseAuth.getInstance()
                 .signInWithEmailAndPassword(email, password)
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                         ragaca()
 
                     }else{
-                        Toast.makeText(this, "eror", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "shecdoma", Toast.LENGTH_SHORT).show()
                     }
                 }
         }
